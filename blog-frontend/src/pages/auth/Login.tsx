@@ -64,6 +64,7 @@ const Login: FC = () => {
                 value={authData.email}
                 onChange={submitValue}
                 id="email"
+                required
                 placeholder="Your email"
                 className="border-2 w-full p-4 rounded-lg border-gray-500"
               />
@@ -75,6 +76,7 @@ const Login: FC = () => {
               <input
                 type="password"
                 name="password"
+                required
                 value={authData.password}
                 onChange={submitValue}
                 placeholder="Your password"

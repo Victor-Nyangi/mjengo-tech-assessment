@@ -84,7 +84,7 @@ cd ./blog-frontend
 
 - Run __npm start__ to serve application
 
-3rd patry packages that I included are
+3rd party packages that I included are
 moment, axios and react-router-dom
 
 To access all pages, login as an admin using the credentials

@@ -7,15 +7,16 @@ const Header: FC = () => {
   const [isAdmin, setisAdmin] = useState(false);
 
   const logout = () => {
+    apiClient.get("/sanctum/csrf-cookie").then((response) => {
     apiClient.post("/api/logout").then((response) => {
-      if (response.status === 204) {
+      if (response.status === 200) {
         setUserLoggedIn(false);
         setTimeout(() => {
           localStorage.clear();
           window.location.pathname = "/";
         }, 1000);
       }
-    });
+    });})
   };
 
   useEffect(() => {

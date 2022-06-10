@@ -66,6 +66,7 @@ const EditPost: FC = () => {
                   id="title"
                   placeholder="Title"
                   value={postData.title}
+                  required
                   onChange={submitValue}
                   className="border-2 w-full p-4 rounded-lg border-gray-500"
                 />
@@ -76,6 +77,7 @@ const EditPost: FC = () => {
                   name="slug"
                   id="slug"
                   placeholder="Slug"
+                  required
                   value={postData.slug}
                   onChange={submitValue}
                   className="border-2 w-full p-4 rounded-lg border-gray-500"
@@ -87,6 +89,7 @@ const EditPost: FC = () => {
                   name="excerpt"
                   id="excerpt"
                   value={postData.excerpt}
+                  required
                   onChange={submitValue}
                   cols={30}
                   rows={4}
@@ -99,6 +102,7 @@ const EditPost: FC = () => {
                   name="body"
                   id="body"
                   value={postData.body}
+                  required
                   onChange={submitValue}
                   cols={30}
                   rows={4}

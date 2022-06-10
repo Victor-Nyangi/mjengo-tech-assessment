@@ -81,7 +81,7 @@ const Writers:FC = () => {
                 {writer.created_at && moment(writer?.created_at).format('YYYY-MM-DD')}
               </td>
               <td className="border-b-2 p-4 dark:border-dark-5">
-              <Link to={`/view/writer/${writer.id}`}
+              <Link to={`/view/writer/${writer.username}`}
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-green-400 hover:text-deep-purple-800"
           >

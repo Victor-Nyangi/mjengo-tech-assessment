@@ -61,6 +61,7 @@ const AddPost: FC = () => {
                 id="title"
                 placeholder="Title"
                 value={postData.title}
+                required
                 onChange={submitValue}
                 className="border-2 w-full p-4 rounded-lg border-gray-500"
               />
@@ -71,6 +72,7 @@ const AddPost: FC = () => {
                 name="slug"
                 id="slug"
                 placeholder="Slug"
+                required
                 value={postData.slug}
                 onChange={submitValue}
                 className="border-2 w-full p-4 rounded-lg border-gray-500"
@@ -83,6 +85,7 @@ const AddPost: FC = () => {
                 id="excerpt"
                 value={postData.excerpt}
                 onChange={submitValue}
+                required
                 cols={30}
                 rows={4}
                 className="bg-gray-100 border-2 w-full p-4 rounded-lg border-gray-500"
@@ -94,6 +97,7 @@ const AddPost: FC = () => {
                 name="body"
                 id="body"
                 value={postData.body}
+                required
                 onChange={submitValue}
                 cols={30}
                 rows={4}

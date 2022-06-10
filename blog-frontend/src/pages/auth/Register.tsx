@@ -77,6 +77,7 @@ const Register: FC = () => {
                 id="name"
                 placeholder="Your name"
                 value={authData.name}
+                required
                 onChange={submitValue}
                 className="border-2 w-full p-4 rounded-lg border-gray-500"
               />
@@ -90,6 +91,7 @@ const Register: FC = () => {
                 name="username"
                 id="username"
                 placeholder="Username"
+                required
                 value={authData.username}
                 onChange={submitValue}
                 className="border-2 w-full p-4 rounded-lg border-gray-500"
