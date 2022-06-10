@@ -26,8 +26,6 @@ DB_PORT=3306
 
 - Run __php artisan serve__
 
-- Run __php artisan db:seed__ to create a super admin
-
 - To prevent CORS errors add the following two lines in your .env file
 SESSION_DOMAIN=api
 SANCTUM_STATEFUL_DOMAINS=api
